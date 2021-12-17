@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "api",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "plug-softworks",
+  "license": "ISC"
+}
