@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.nav-title{
+    display: flex;
+    height: 100%;
+    width: 5rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* .nav-title > img {
+    width: 50%;
+    position: absolute;
+    left: -30px;
+} */
+.nav-title > h1{
+    color: white;
+    font-size: 26px;
+    font-family: 'Noto Serif', serif;
+}
+.nav-links{
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-links > button{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 4px;
+    background: none;
+    border: none;
+    flex-direction: column;
+}
+.nav-links > button > a{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-weight: bold; */
+    text-decoration: none;
+}
+.nav-links > button > a:hover{
+    color: rgb(103, 64, 247);
+    font-size: 16px;
+}
+.indicator {
+    display: none;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    animation: animate-indicator 0.3s linear;
+}
+.nav-auth{
+    display: flex;
+    height: 60%;
+    width: 120px;
+}
+.nav-auth > button{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 0.5px solid rgb(75, 75, 75);
+    border-radius: 6px;
+    color: white;
+}
+.nav-auth > button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.nav-links > button:hover{
+    cursor: pointer;
+}
+.nav-links > button:hover > span{
+    display: flex;
+}
+@keyframes animate-indicator {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    70% {
+        width: 70%;
+    }
+    100% {
+        width: 100%;
+    }
+}
