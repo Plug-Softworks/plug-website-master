@@ -6,11 +6,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    position: fixed;
+    animation: animate-descend 1s linear;
 }
 .nav-title{
     display: flex;
     height: 100%;
-    width: 5rem;
+    width: 6rem;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -31,6 +33,7 @@ nav {
     width: fit-content;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 .nav-links > button{
     display: flex;
@@ -43,6 +46,7 @@ nav {
     background: none;
     border: none;
     flex-direction: column;
+    animation: animate-links 1s linear;
 }
 .nav-links > button > a{
     color: white;
@@ -77,17 +81,42 @@ nav {
     border: 0.5px solid rgb(75, 75, 75);
     border-radius: 6px;
     color: white;
+    box-shadow: 1px 1px 14px 1px black;
 }
 .nav-auth > button:hover{
     background: white;
     color: black;
     cursor: pointer;
+    box-shadow: 1px 1px 10px 6px rgb(26, 25, 25);
 }
 .nav-links > button:hover{
     cursor: pointer;
 }
 .nav-links > button:hover > span{
     display: flex;
+}
+@keyframes animate-descend {
+    0%
+    {
+        position: absolute;
+        top: -50px;
+    }
+    100%
+    {
+        position: fixed;
+        top: 0%;
+    }
+}
+@keyframes animate-links {
+    0% {
+        position: absolute;
+        left: -2000px;
+        margin: 100px;
+    }
+    100%
+    {
+        left: 0%;
+    }
 }
 @keyframes animate-indicator {
     0% {
