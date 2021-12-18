@@ -8,11 +8,13 @@ nav {
     padding: 10px;
     position: fixed;
     animation: animate-descend 1s linear;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .nav-title{
     display: flex;
     height: 100%;
-    width: 6rem;
+    width: 8rem;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -95,6 +97,33 @@ nav {
 .nav-links > button:hover > span{
     display: flex;
 }
+svg text {
+    font-family: Lora;
+    letter-spacing: 8px;
+    stroke: rgb(82, 82, 238);
+    font-size: 30px;
+    font-weight: 800;
+    stroke-width: 1.2;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(189, 68%, 75%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
 @keyframes animate-descend {
     0%
     {

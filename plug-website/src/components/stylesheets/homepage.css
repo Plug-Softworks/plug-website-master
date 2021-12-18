@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 .home-main-wrapper {
   display: flex;
   height: 100%;
@@ -42,12 +44,14 @@
   color: white;
   font-size: 4.5vw;
   margin: 10px;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 3px;
 }
 .greetings-wrapper > p{
   color: white;
   text-align: center;
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
 }
 .il-img-holder{

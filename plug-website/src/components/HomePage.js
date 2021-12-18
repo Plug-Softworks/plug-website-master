@@ -2,17 +2,21 @@ import React from 'react';
 import './stylesheets/homepage.css';
 import processor from  './assets/Processor.png';
 import followCursor from './follow_cursor';
+import {useEffect} from 'react';
 
 function HomePage(){
-    followCursor();
+
+    useEffect(()=>{
+        followCursor();
+    },[])
     return (
         <div className='home-main-wrapper'>
             <div className='home-content'>
                 <div className='greetings-wrapper'>
                     <h1>Hello There!</h1>
                     <h2>Welcome to Plug</h2>
-                    <p>Plug Softworks aims at providing quality tech related services</p>
-                    <button>Learn More</button>
+                    <p>Want some Techie work done? Well you found us!<br></br></p>
+                    <button>Our Services</button>
                 </div>
                 {/* <div className='greetings-learn'>
                     <button>Learn More</button>

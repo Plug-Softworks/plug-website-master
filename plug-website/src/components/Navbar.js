@@ -5,7 +5,9 @@ function Navbar(){
     return (
         <nav>
             <div className="nav-title">
-                <h1>PLUG</h1>
+            <svg> <text x="50%" y="54%"  text-anchor="middle"  >
+                    Plug
+                  </text></svg>
             </div>
             <div className="nav-links">
                 <button><a href="#">Home</a><span className='indicator'></span></button>
