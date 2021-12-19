@@ -10,9 +10,9 @@ function Navbar(){
                   </text></svg>
             </div>
             <div className="nav-links">
-                <button><a href="#">Home</a><span className='indicator'></span></button>
-                <button><a href="#">Services</a><span className='indicator'></span></button>
-                <button><a href="#">About</a><span className='indicator'></span></button>
+                <button><a href="#home">Home</a><span className='indicator'></span></button>
+                <button><a href="#about">About</a><span className='indicator'></span></button>
+                <button><a href="#services">Services</a><span className='indicator'></span></button>
             </div>
             <div className="nav-auth">
             <button>Contact us.</button>

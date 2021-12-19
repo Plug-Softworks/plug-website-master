@@ -1,0 +1,24 @@
+.about-title{
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.about-title > h1{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.about-text{
+    display: flex;
+    height: 450px;
+    width: 100%;
+    background: rgb(21, 21, 24);
+    max-width: 560px;
+    box-shadow: 1px 1px 10px 8px rgb(16, 16, 19);
+    border-radius: 10px;
+    /* -webkit-box-shadow: 10px 10px 20px 0 rgba(20, 22, 29, 0.849);
+    box-shadow: 10px 10px 20px 0 rgba(20, 22, 29, 0.829) */
+}

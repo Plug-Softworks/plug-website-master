@@ -1,5 +1,5 @@
-function followCursor(){
-    const processor = document.getElementById('processor');
+function followCursor(id){
+    const processor = document.getElementById(id);
 	document.addEventListener('mousemove',(e)=>{
         let x_pos = e.clientX;
         let y_pos = e.clientY;

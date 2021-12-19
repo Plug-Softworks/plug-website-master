@@ -3,4 +3,10 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+.main-wrapper::-webkit-scrollbar{
+    display: none;
+    width: 0px;
 }

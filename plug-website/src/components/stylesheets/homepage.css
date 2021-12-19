@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 .home-main-wrapper {
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   padding: 16px;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 .home-content {
   display: flex;

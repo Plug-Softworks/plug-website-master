@@ -4,6 +4,10 @@
   box-sizing: border-box;
   transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition-duration: 0.4s;
+  scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth;
 }
 .App {
   display: flex;

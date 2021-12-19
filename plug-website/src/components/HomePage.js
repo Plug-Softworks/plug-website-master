@@ -7,15 +7,15 @@ import {useEffect} from 'react';
 function HomePage(){
 
     useEffect(()=>{
-        followCursor();
+        followCursor("processor");
     },[])
     return (
-        <div className='home-main-wrapper'>
+        <div className='home-main-wrapper' id="home">
             <div className='home-content'>
                 <div className='greetings-wrapper'>
                     <h1>Hello There!</h1>
                     <h2>Welcome to Plug</h2>
-                    <p>Want some Techie work done? Well you found us!<br></br></p>
+                    <p>Want some Techie work done? Well you found us !<br></br></p>
                     <button>Our Services</button>
                 </div>
                 {/* <div className='greetings-learn'>
