@@ -17,8 +17,14 @@
     width: 100%;
     background: rgb(21, 21, 24);
     max-width: 560px;
+    border: 0.5px solid rgb(21, 21, 24);
     box-shadow: 1px 1px 10px 8px rgb(16, 16, 19);
     border-radius: 10px;
+    padding: 10px;
     /* -webkit-box-shadow: 10px 10px 20px 0 rgba(20, 22, 29, 0.849);
     box-shadow: 10px 10px 20px 0 rgba(20, 22, 29, 0.829) */
+}
+.about-text > p{
+    color: white;
+    line-height: 30px;
 }

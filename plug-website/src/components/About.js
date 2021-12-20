@@ -17,7 +17,7 @@ function About(){
                     <h1>About us</h1>
                 </div>
                 <div className="about-text">
-                    <p></p>
+                    <p><strong>Plug Softworks</strong> is a tech startup aiming at providing tech related services such as web development to potential clients.<br></br>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam suscipit assumenda vel sit est mollitia tempore quis fugiat consequatur itaque aspernatur vitae quasi, minus dolorem neque rem dignissimos laudantium eveniet!</p>
                 </div>
             </div>
             <div className="home-il">
