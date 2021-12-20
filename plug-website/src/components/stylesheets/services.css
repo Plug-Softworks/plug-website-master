@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 #services {
     flex-direction: column;
 }
@@ -44,7 +47,7 @@
     height: 70%;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 60px;
     width: 100%;
     object-fit: contain;
 }
@@ -57,9 +60,13 @@
 }
 .card-title > h3{
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    /* font-family: 'Twinkle Star', cursive; */
+    font-family: 'Caveat', cursive;
 }
 .card-icon > img {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
+/* for long description font, use=> font-family: 'Padauk', sans-serif; */
