@@ -7,7 +7,7 @@ function Cards({services}) {
             {
                 services.map((service)=>{
                     return (
-                        <Card title={service.title} short_description={service.short_description} long_description={service.description} icon={service.icon} />
+                        <Card title={service.title} short_description={service.short_description} long_description={service.description} icon={service.icon} description_image={service.description_image} />
                     )
                 })
             }

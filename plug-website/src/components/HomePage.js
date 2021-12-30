@@ -10,7 +10,7 @@ function HomePage(){
         followCursor("processor");
     },[])
     return (
-        <div className='home-main-wrapper' id="home">
+        <div className='home-main-wrapper' id="Home">
             <div className='home-content'>
                 <div className='greetings-wrapper'>
                     <h1>Hello There!</h1>

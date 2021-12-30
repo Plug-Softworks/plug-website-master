@@ -37,7 +37,7 @@ nav {
     justify-content: space-evenly;
     position: relative;
 }
-.nav-links > button{
+/* .nav-links > button{
     display: flex;
     height: 100%;
     width: 100%;
@@ -48,17 +48,32 @@ nav {
     background: none;
     border: none;
     flex-direction: column;
-    animation: animate-links 1s linear;
-}
-.nav-links > button > a{
+} */
+.nav-links > a{
+    display: flex;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* font-weight: bold; */
     text-decoration: none;
+    padding: 10px;
+    margin: 4px;
+    animation: animate-links 1s linear;
+    font-size: 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.nav-links > button > a:hover{
+.nav-links > a:hover{
     color: rgb(103, 64, 247);
     font-size: 16px;
+}
+.nav-links > a:hover > span {
+    display: flex;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    animation: animate-indicator 0.3s linear;
 }
 .indicator {
     display: none;
@@ -96,6 +111,36 @@ nav {
 }
 .nav-links > button:hover > span{
     display: flex;
+}
+.min-menu-btn {
+    display: none;
+    height: 60%;
+    width: 40px;
+}
+.min-menu-btn > button {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border: 0.5px solid rgba(75, 75, 75, 0.349);
+    border-radius: 4px;
+}
+.min-menu-btn > button > svg {
+    stroke: white;
+    fill: white;
+}
+.min-menu-btn > button:hover {
+    cursor: pointer;
+    background: white;
+    box-shadow: 1px 1px 10px 6px rgb(26, 25, 25);
+}
+.min-menu-btn > button:hover > svg {
+    stroke: black;
+    fill: black;
 }
 svg text {
     font-family: Lora;
@@ -159,5 +204,16 @@ svg text {
     }
     100% {
         width: 100%;
+    }
+}
+@media (max-width: 630px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-auth {
+        display: none;
+    }
+    .min-menu-btn {
+        display: flex;
     }
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
-#services {
+#Services {
     flex-direction: column;
 }
 .serve-title{
@@ -24,11 +24,19 @@
     min-height: 200px;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+.cards-wrapper::-webkit-scrollbar{
+    display: none;
+    width: 0%;
+  }
 .card-wrapper {
     display: flex;
     height: 300px;
     width: 260px;
+    min-width: 260px;
     background: rgb(21, 21, 24);
     margin: 20px;
     box-shadow: 1px 1px 10px 4px rgb(10, 10, 12);
@@ -70,3 +78,79 @@
     object-fit: contain;
 }
 /* for long description font, use=> font-family: 'Padauk', sans-serif; */
+.sd-wrapper {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(21, 21, 24);
+    position: relative;
+    animation: animate-fly-down 0.2s linear;
+    padding: 10px;
+}
+.sd-wrapper > button{
+    display: flex;
+    height: 30px;
+    width: 80px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 10px;
+    background: none;
+    border: 0.5px solid rgb(75, 75, 75);
+    border-radius: 6px;
+    color: white;
+    box-shadow: 1px 1px 14px 1px black;
+}
+.sd-wrapper > button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 6px rgb(26, 25, 25);
+}
+.sd-header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid rgb(26, 25, 25);
+}
+.sd-header > h2 {
+    color: white;
+}
+.sd-body {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.sd-image {
+    display: flex;
+    height: 140px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+.sd-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@keyframes animate-fly-down {
+    0%
+    {
+        bottom: 50%;
+        transform: scale(0.5, 0.5);
+        /* transform: skew(20deg,4deg); */
+    }
+    100%
+    {
+        bottom: 10%;
+    }
+}

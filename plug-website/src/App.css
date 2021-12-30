@@ -16,10 +16,23 @@ html{
   align-items: center;
   justify-content: center;
   background-image: url('./components/assets/repeated-square-dark.png');
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.App::-webkit-scrollbar{
+  display: none;
+  width: 0%;
 }
 .Content {
   display: flex;
   height: 100%;
   width: 100%;
   background: linear-gradient(180deg, rgb(21, 21, 24), rgba(21, 21, 24, 0.158));
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.Content::-webkit-scrollbar{
+  display: none;
+  width: 0%;
 }

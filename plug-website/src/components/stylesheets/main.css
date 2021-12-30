@@ -10,3 +10,18 @@
     display: none;
     width: 0px;
 }
+.modal-wrapper{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.227);
+    align-items: center;
+    justify-content: center;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.modal-wrapper::-webkit-scrollbar{
+    display: none;
+    width: 0%;
+  }
