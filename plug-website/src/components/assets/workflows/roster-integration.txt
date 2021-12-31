@@ -1,0 +1,24 @@
+Roster Intergration Workflow
+
+The workflow is triggered on a pull request to the main branch.
+
+	on:
+	  pull_request:
+	    branches:
+	      - main
+	      
+	      
+environment variables to be used are then declared:
+	env:
+	  SELENIUM_GRID_PROVIDER: saucelabs
+	  CLOUD_WATCH_METRIC: false
+	  TEST_TYPE: Github-Action
+	  SAUCE_USERNAME: ${{secrets.SAUCE_USERNAME}}
+	  SAUCE_ACCESS_KEY: ${{secrets.SAUCE_ACCESS_KEY}}
+	  
+The workflow jobs run on the latest version of ubuntu:
+	jobs:
+	  integ-roster:
+	    name: Roster Integration Test
+	    runs-on: ubuntu-latest
+	    

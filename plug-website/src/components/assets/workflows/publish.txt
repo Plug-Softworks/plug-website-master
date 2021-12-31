@@ -1,0 +1,29 @@
+Publish and deploy workflow
+
+The workflow is implemented on a new release:
+	on:
+	  release:
+	    types: [published]
+	    
+The workflow jobs run on the latest version of ubuntu:
+
+	jobs:
+	  publish-and-deploy-documentation:
+	    runs-on: ubuntu-latest
+	    
+The first step is implementing a checkout action using [ actions/checkout@v2 ], which brings the source code into the current working directory.
+
+Then a node environment --version: 16 is set up:
+	uses: actions/setup-node@v1
+	with:
+	  node-version: 16
+	  registry-url: https://registry.npmjs.org/
+	  
+Then the dependencies are installed [ npm install ], building is done [ npm run build ] and published to npm with the --access public flag [ npm publish --access public ]:
+
+      - name: NPM Install
+        run: npm install
+      - name: NPM run build
+        run: npm run build
+      - name: Publish to NPM
+        run: npm publish --access public

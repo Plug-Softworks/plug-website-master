@@ -1,0 +1,24 @@
+Continuous integration workflow
+
+This workflow is implemented on a pull request to the main branch:
+	on:
+	  pull_request:
+	    branches: [ main ]
+	    
+The workflow jobs run on the latest version of ubuntu linux:
+	jobs:
+	  build:
+	    name: Build and Run Unit Tests
+	    runs-on: ubuntu-latest
+	    
+The workflow does a clean install of node dependencies using [ npm ci ] command, then builds the source code using [ npm run build:release --if-present ] command and runs tests across different versions of node as specified in the continuous-integration.yml file in .github/workflows
+	    strategy:
+	      matrix:
+		node-version: [16.x]
+	
+	
+	
+	      - name: Use Node.js ${{ matrix.node-version }}
+		uses: actions/setup-node@v1
+		with:
+		  node-version: ${{ matrix.node-version }}

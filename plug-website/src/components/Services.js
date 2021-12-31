@@ -6,10 +6,10 @@ import vr_wand from './assets/VR-Wand.png';
 import mobile_icon from './assets/icons8-mobile-96.png';
 import seo_icon from './assets/icons8-seo-64.png';
 import webdev_icon from './assets/icons8-web-design-96 .png';
-import mobile_dev_ill from './assets/undraw_programming_re_kg9v.svg';
+import mobile_dev_ill from './assets/undraw_develop_app_re_bi4i.svg';
 import web_dev_ill from './assets/undraw_landing_page_re_6xev.svg';
-import game_dev_ill from './assets/undraw_hello_re_3evm.svg';
-import seo_ill from './assets/undraw_new_ideas_jdea.svg';
+import game_dev_ill from './assets/undraw_gaming_re_cma2.svg';
+import seo_ill from './assets/undraw_search_engines_nn-9-e.svg';
 
 function Services(){
     const [services, setServices] = useState([
