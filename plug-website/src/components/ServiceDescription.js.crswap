@@ -8,7 +8,7 @@ function ServiceDescription({title, description, image, descriptionImage}) {
     const [modal, setModal] = useContext(ModalCtx);
 
     useEffect(()=>{
-        followCursor("sd-image", 40)
+        followCursor("sd-image")
     },[])
 
     return (
@@ -24,7 +24,7 @@ function ServiceDescription({title, description, image, descriptionImage}) {
             </div>
             <div className='sd-body'>
                 <div className='sd-image' id="sd-image">
-                    <span></span>
+                    <span className="span2"></span>
                     <span className="span2"></span>
                     <img src={descriptionImage} alt='Loading...' />
                 </div>
