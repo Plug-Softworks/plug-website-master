@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 function About(){
 
     useEffect(()=>{
-        followCursor("imac", 100)
+        followCursor("imac")
     },[])
 
     return (

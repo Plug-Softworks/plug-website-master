@@ -1,15 +1,9 @@
 import React from 'react';
 import { useContext } from 'react';
 import { ModalCtx } from './contexts/ModalCtx';
-import { useEffect } from 'react';
-import followCursor from './follow_cursor';
 
 function ServiceDescription({title, description, image, descriptionImage}) {
     const [modal, setModal] = useContext(ModalCtx);
-
-    useEffect(()=>{
-        followCursor("sd-image", 40)
-    },[])
 
     return (
         <div className='sd-wrapper'>
@@ -23,9 +17,7 @@ function ServiceDescription({title, description, image, descriptionImage}) {
                 <h2>{title}</h2>
             </div>
             <div className='sd-body'>
-                <div className='sd-image' id="sd-image">
-                    <span></span>
-                    <span className="span2"></span>
+                <div className='sd-image'>
                     <img src={descriptionImage} alt='Loading...' />
                 </div>
             </div>

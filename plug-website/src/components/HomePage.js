@@ -7,7 +7,7 @@ import {useEffect} from 'react';
 function HomePage(){
 
     useEffect(()=>{
-        followCursor("processor", 100);
+        followCursor("processor");
     },[])
     return (
         <div className='home-main-wrapper' id="Home">

@@ -128,46 +128,19 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    align-items: center;
 }
 .sd-image {
     display: flex;
-    height: 260px;
-    width: 260px;
+    height: 140px;
+    width: 100%;
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    border-radius: 50%;
-    padding: 24px;
-    box-shadow: inset 10px 1px 10px rgba(0,0,0,0.05),
-    15px 25px 10px rgba(0,0,0,0.05),
-    15px 10px 10px rgba(0,0,0,0.05),
-    inset -10px 10px 15px rgba(10, 10, 12, 0.473);
-    position: relative;
-    animation: animate-bubble 2.5s linear infinite;
 }
 .sd-image > img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-}
-.sd-image > span {
-    position: absolute;
-    top: 70px;
-    left: 36px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-}
-.sd-image > .span2{
-    position: absolute;
-    top: 50px;
-    left: 60px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #fff;
 }
 @keyframes animate-fly-down {
     0%
@@ -179,12 +152,5 @@
     100%
     {
         bottom: 10%;
-    }
-}
-@keyframes animate-bubble {
-    50%
-    {
-        height: 250px;
-        width: 270px;
     }
 }
