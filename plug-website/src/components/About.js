@@ -1,6 +1,6 @@
 import React from 'react';
 import './stylesheets/about.css';
-import imac from './assets/iMac.png';
+import imac from './assets/iMac.webp';
 import followCursor from './follow_cursor';
 import { useEffect } from 'react';
 

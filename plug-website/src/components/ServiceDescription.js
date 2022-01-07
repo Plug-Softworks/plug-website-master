@@ -28,6 +28,11 @@ function ServiceDescription({title, description, image, descriptionImage}) {
                     <span className="span2"></span>
                     <img src={descriptionImage} alt='Loading...' />
                 </div>
+                <div className='sd-description' >
+                    <p>
+                        {description}
+                    </p>
+                </div>
             </div>
         </div>
     )

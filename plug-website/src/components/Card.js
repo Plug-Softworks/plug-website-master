@@ -10,7 +10,7 @@ function Card({title, short_description, long_description, icon, description_ima
         <div className='card-wrapper' onClick={()=>{
             setModal({
                 openStatus: true,
-                data: <ServiceDescription title={title} descriptionImage={description_image} />
+                data: <ServiceDescription title={title} descriptionImage={description_image} description={long_description} />
             })
         }}>
             <div className='card-icon'>
