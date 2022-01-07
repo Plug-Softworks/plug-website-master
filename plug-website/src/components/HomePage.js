@@ -1,6 +1,6 @@
 import React from 'react';
 import './stylesheets/homepage.css';
-import processor from  './assets/Processor.png';
+import processor from  './assets/Processor.webp';
 import followCursor from './follow_cursor';
 import {useEffect} from 'react';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import './stylesheets/services.css';
 import Cards from './Cards';
 import { useState } from 'react';
-import vr_wand from './assets/VR-Wand.png';
+import vr_wand from './assets/VR-Wand.webp';
 import mobile_icon from './assets/icons8-mobile-96.png';
 import seo_icon from './assets/icons8-seo-64.png';
 import webdev_icon from './assets/icons8-web-design-96 .png';
@@ -16,7 +16,8 @@ function Services(){
         {
             title: "Web Development",
             short_description: "",
-            description: "",
+            description: `Want a Website or Web Application built on time and professionally?\n
+                            Well you came to the right place\n... We offer these services leveraging various full stack web development technologies such as HTML, CSS and Javascript for basic web development and ReactJS for advanced front end development`,
             icon: webdev_icon,
             description_image:  web_dev_ill,
         },
